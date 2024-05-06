@@ -4,7 +4,7 @@
 This repository contains the code and deployment setup for the CHLA Project (#2) - a machine learning model aimed at predicting patient no-shows at CHLA, deployed using Streamlit. The objective is to accurately predict whether a patient will show up for their scheduled appointment using historical CHLA data.
 
 ## Dataset
-The data used to train the model is proprietary and hence, cannot be shared. The `CHLA_clean_data_2024_Appointments.csv` file contains the data on which the predictions for future patients are made.
+The data used to train the model is proprietary and hence, cannot be shared. The `CHLA_clean_data_2024_Appointments.csv` file contains the data for scheduled patients on which the predictions are made.
 
 ## Model Development
 A variety of machine learning algorithms and hyperparameters were explored to select the best-performing model. The Random Forest Classifier was chosen due to its robustness and performance across several metrics crucial to the no-show prediction problem. Emphasis was placed on recall, precision, F1-score, and ROC-AUC, given the high costs associated with false predictions. <br>
