@@ -1,26 +1,48 @@
 # CHLA no-show Prediction Model Deployment
 
+
+**Streamlit App Link:** https://appointmentpredictiontool.streamlit.app/
+
+
 ## Overview
-This repository contains the code and deployment setup for the CHLA Project (#2) - a machine learning model aimed at predicting patient no-shows at CHLA, deployed using Streamlit. The objective is to accurately predict whether a patient will show up for their scheduled appointment using historical CHLA data.
+This repository contains the code and deployment setup for the CHLA Project - a machine learning model aimed at predicting patient no-shows at Children's Hospital Los Angeles (CHLA), deployed using Streamlit. The objective is to accurately predict whether a patient will show up for their scheduled appointment using historical CHLA data.
+
+The project has 5 of the following parts:
+- Project-01: Model Development and Deployment using Azure ML Studio (not in this repo).
+- Project-02: Model Developed using python (sci-kit learn), Created and Deployed as Streamlit App.
+- Project-03: Deployed Streamlit app using Docker (containerization).
+- Project-04: Deployed Streamlit app using FastAPI (and also Docker for containerization).
+- Project-05: Deployed Streamlit app using AWS (not in this repo).
+
 
 ## Dataset
 The data used to train the model is proprietary and hence, cannot be shared. The `CHLA_clean_data_2024_Appointments.csv` file contains the data for scheduled patients on which the predictions are made.
 
+
 ## Model Development
 A variety of machine learning algorithms and hyperparameters were explored to select the best-performing model. The Random Forest Classifier was chosen due to its robustness and performance across several metrics crucial to the no-show prediction problem. Emphasis was placed on recall, precision, F1-score, and ROC-AUC, given the high costs associated with false predictions. <br>
 <br>
-Models tested: <br>
+Models tested for Project 2-5 (for project-01, every 2 class algorithm available in Azure ML Studio was used): <br>
 - Random Forest Classifier
 - Gradient Boost Classifier
 - AdaBoost Classifier
 
+
 ## Feature Selection
 Top predictive features were carefully selected based on their impact on model performance, with a methodical approach involving correlation analysis, feature importance ranking, and domain knowledge. 
 
+
 ## Deployment
-The final model was deployed using Streamlit in two different modes:
+For Project-02, the final model was deployed using Streamlit in two different modes:
 - Local Machine
 - Github + Streamlit Server
+
+For Project-03, the final model was deployed as a Docker Container on localhost.
+
+For Project-04, components of the app were split: frontend & backend. The backend was deployed using FastAPI, and both the components were containerized using Docker.
+
+For Project-05, the final model was deployed using AWS.
+
 
 ## Public URL
 The model is deployed and publicly accessible at the following Streamlit Server URL: <br>
