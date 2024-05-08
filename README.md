@@ -7,7 +7,7 @@
 ## Overview
 This repository contains the code and deployment setup for the CHLA Project - a machine learning model aimed at predicting patient no-shows at Children's Hospital Los Angeles (CHLA), deployed using Streamlit. The objective is to accurately predict whether a patient will show up for their scheduled appointment using historical CHLA data.
 
-The project has 5 of the following parts:
+The complete project has the following parts (aimed to explore different methods of deployment):
 - Project-01: Model Development and Deployment using Azure ML Studio (not in this repo).
 - Project-02: Model Developed using python (sci-kit learn), Created and Deployed as Streamlit App.
 - Project-03: Deployed Streamlit app using Docker (containerization).
