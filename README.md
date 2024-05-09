@@ -49,11 +49,22 @@ The model is deployed and publicly accessible at the following Streamlit Server 
 https://appointmentpredictiontool.streamlit.app/
 
 ## Repository Contents
+Project-02:
 - app.py - contains the code for the Streamlit deployed app.
 - project2Final.ipynb - contains the code to explore the data, test the different models, and save the best final model.
 - model.pkl - pickle file of the saved best model.
 - encoder.pkl - pickle file of the encoded features from the notebook file.
 - requirements.txt - the package requirements to deploy and run the model and app.
+
+Project-03:
+- same as Project-02.
+- Dockerfile - the file that creates the image and installs the required packages.
+
+Project-04:
+- same .pkl files as Project-02/03.
+- separate "Dockerfile" files for frontend & backend.
+- app.py from project-02/03 split into: user_inputs.py (frontend) and prediction.py (backend).
+- compose.yml: so the frontend streamlit server can communicate with the FastAPI backend server.
 
 ## Getting Started
 Clone the repository using the following command:
