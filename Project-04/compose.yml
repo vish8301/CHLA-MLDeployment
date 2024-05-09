@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  backend:
+    image: backend-app
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+    volumes:
+      - ./backend-app:/app
+    command: uvicorn prediction:app --host 0.0.0.0 --port 8000 --reload  # Use --reload for development only
+
+  frontend:
+    image: frontend-app
+    ports:
+      - "8501:8501"
+    environment:
+      - BACKEND_URL=http://backend:8000
+    networks:
+      - app-network
+    volumes:
+      - ./frontend-app:/app
+    depends_on:
+      - backend
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  backend-data:
+  frontend-data:
