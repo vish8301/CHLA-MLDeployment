@@ -57,11 +57,11 @@ Project-02:
 - requirements.txt - the package requirements to deploy and run the model and app.
 
 Project-03:
-- same as Project-02.
+- same as project-02.
 - Dockerfile - the file that creates the image and installs the required packages.
 
 Project-04:
-- same .pkl files as Project-02/03.
+- same .pkl files as project-02/03.
 - separate "Dockerfile" files for frontend & backend.
 - app.py from project-02/03 split into: user_inputs.py (frontend) and prediction.py (backend).
 - compose.yml: so the frontend streamlit server can communicate with the FastAPI backend server.
@@ -71,23 +71,24 @@ Clone the repository using the following command:
 ```sh
 git clone https://github.com/vish8301/MLDeployment.git
 ```
+
 Run the following commands on each project's directory:
 
-Project-02: To run the Streamlit app locally, install the dependencies, and execute the Streamlit run command:
+- Project-02: To run the Streamlit app locally, install the dependencies, and execute the Streamlit run command:
 ```sh
 cd CHLA-MLDeployment/Project-02
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-Project-03: To pull the docker image and run the app:
+- Project-03: To pull the docker image and run the app:
 ```sh
 cd CHLA-MLDeployment/Project-03
 docker pull vish831/chla-docker:latest
 docker run -p 8501:8501 vish831/chla-docker
 ```
 
-Project-04: To run the docker images (frontend & backend:
+- Project-04: To run the docker images (frontend & backend:
 ```sh
 cd CHLA-MLDeployment/Project-04
 docker-compose up
