@@ -56,9 +56,28 @@ https://appointmentpredictiontool.streamlit.app/
 - requirements.txt - the package requirements to deploy and run the model and app.
 
 ## Getting Started
-To run the Streamlit app locally, clone the repository, install the dependencies, and execute the Streamlit run command:
+Clone the repository using the following command:
 ```sh
 git clone https://github.com/vish8301/MLDeployment.git
-cd CHLA-MLDeployment
+```
+Run the following commands on each project's directory:
+
+Project-02: To run the Streamlit app locally, install the dependencies, and execute the Streamlit run command:
+```sh
+cd CHLA-MLDeployment/Project-02
 pip install -r requirements.txt
 streamlit run app.py
+```
+
+Project-03: To pull the docker image and run the app:
+```sh
+cd CHLA-MLDeployment/Project-03
+docker pull vish831/chla-docker:latest
+docker run -p 8501:8501 vish831/chla-docker
+```
+
+Project-04: To run the docker images (frontend & backend:
+```sh
+cd CHLA-MLDeployment/Project-04
+docker-compose up
+```
