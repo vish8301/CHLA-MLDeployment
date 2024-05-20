@@ -1,4 +1,5 @@
 # CHLA No-show Prediction Model Deployment
+https://chla-deployment.streamlit.app/
 
 ## Overview
 This repository contains the code and deployment setup for Project #2 - a machine learning model aimed at predicting patient no-shows at CHLA, deployed using Streamlit. The objective is to accurately predict whether a patient will show up for their scheduled appointment using historical CHLA data.
@@ -24,7 +25,7 @@ The final model was deployed using Streamlit in two different modes:
 
 ## Public URL
 The model is deployed and publicly accessible at the following Streamlit Server URL: <br>
-https://appointmentpredictiontool.streamlit.app/
+https://chla-deployment.streamlit.app/
 
 ## Repository Contents
 - app.py - contains the code for the Streamlit deployed app.
@@ -36,7 +37,7 @@ https://appointmentpredictiontool.streamlit.app/
 ## Getting Started
 To run the Streamlit app locally, clone the repository, install the dependencies, and execute the Streamlit run command:
 ```sh
-git clone https://github.com/xvmarquez/AppointmentPredictionTool.git
-cd AppointmentPredictionTool
+git clone https://github.com/vish8301/CHLA-MLDeployment.git
+cd CHLA-MLDeployment/Project-02
 pip install -r requirements.txt
 streamlit run app.py
