@@ -35,10 +35,12 @@ def main():
 
     ### Date inputs
     col1, col2 = st.columns([1,1])
+    min_date = df['APPT_DATE'].min().date()
+    max_date = df['APPT_DATE'].max().date()
     with col1:
-        start_datetime = st.date_input("Start Date", min_value=df['APPT_DATE'].min(), max_value=df['APPT_DATE'].max())
+        start_datetime = st.date_input("Start Date", value=min_date, min_value=min_date, max_value=max_date)
     with col2:
-        end_datetime = st.date_input("End Date", min_value=df['APPT_DATE'].min(), max_value=df['APPT_DATE'].max())
+        end_datetime = st.date_input("End Date", value=max_date, min_value=min_date, max_value=max_date)
 
     start_datetime = pd.to_datetime(start_datetime)
     end_datetime = pd.to_datetime(end_datetime)
