@@ -1,7 +1,7 @@
 # CHLA no-show Prediction Model Deployment
 
 
-**Streamlit App Link:** https://appointmentpredictiontool.streamlit.app/
+**Streamlit App Link:** https://chla-deployment.streamlit.app/
 
 
 ## Overview
@@ -46,7 +46,7 @@ For Project-05, the final model was deployed using AWS.
 
 ## Public URL
 The model is deployed and publicly accessible at the following Streamlit Server URL: <br>
-https://appointmentpredictiontool.streamlit.app/
+https://chla-deployment.streamlit.app/
 
 ## Repository Contents
 Project-02:
